@@ -1,65 +1,462 @@
+<!-- html content by Nandu Arav-->
+<!--Morpheus
+ note that my goal was not to touch nandu s html content , and not rely on Javascript to maintain purity of responsiveness.
+so only option is pure CSS, but also have to maintain a balance in putting design features so that it does not complicate reading -->
+
 <!DOCTYPE html>
-<html lang="en-US">
-<head>
-  <meta name="Neetish Raj" content="responsive web template">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles.css">
-  <title>Sample Page</title>
-</head>
-<body>
-  <div class="container">
-    <header>
-      <h1>Web Development Trends</h1>
-    </header>
-    <nav>
-      <ul>
-        <li>Home</li>
-        <li>Projects</li>
-        <li>Blog</li>
-        <li>Contact</li>
-      </ul>
-    </nav>
-    <aside>
-      <ul>
-        <li><a href="#">Activities</a></li>
-        <li><a href="#">Interests</a></li>
-        <li><a href="#">References</a></li>
-      </ul>
-    </aside>
+<html>
+    <head>
+        <title>Interactive DS questions</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <p>
 
-    <article>
-      <h1>London</h1>
-      <p>Don't know much about sketching, but I love my scribbles and believe me,
-        painting, sketching etc can be really therapeutic and helps to fight
-        stress and don't just take take my word for it, try yourself.One tip,
-        no matter how bad it looks in the start just keep going on,
-           there are many perpectives to judge an art thats why no painting can
-            be bad even a blank canvas and you know what sometimes it brings out
-             your childhood impressions of the world and you might get
-             lost in nostalgia.</p>
+            1)What is data-structure?
+<br />
+    Data structure is a way of defining, storing and retriving of data in a structural and systemetic way.
+A data structure may contain different type of data items.
+</p>
+<p>
+2)What are various data-structures available?
+<br/>
+     Data structure availability may vary by programming languages. Commonly available data structures are list, arrays, stack,
+queues, graph, tree etc.
+</p>
+<p id="sound1" >
+3)What is selection sort?
+<br/>
+     Selection sort is in-place sorting technique. It divides the data set into two sub-lists: sorted and unsorted. Then it selects
+the minimum element from unsorted sub-list and places it into the sorted list. This iterates unless all the elements from unsorted
+sub-list are consumed into sorted sub-list.
+</p>
+<p>
+4)How insertion sort and selection sorts are different?
+<br/>
+      Both sorting techniques maintains two sub-lists, sorted and unsorted and both take one element at a time and places it into
+sorted sub-list. Insertion sort works on the current element in hand and places it in the sorted array at appropriate location
+maintaining the properties of insertion sort. Whereas, selection sort searches the minimum from the unsorted sub-list and replaces
+it with the current element in hand.
+</p>
+<p>
+5)What is merge sort and how it works?
+<br/>
+      Merge sort is sorting algorithm based on divide and conquer programming approach. It keeps on dividing the list into smaller
+sub-list until all sub-list has only 1 element. And then it merges them in a sorted way until all sub-lists are consumed. It has
+run-time complexity of Ο(n log n) and it needs Ο(n) auxiliary space.
+</p>
+<p>
+6)What is shell sort?
+<br/>
+     Shell sort can be said a variant of insertion sort. Shell sort divides the list into smaller sublist based on some gap variable
+and then each sub-list is sorted using insertion sort. In best cases, it can perform upto Ο(n log n).
+</p>
+<p>
+7)Briefly explain the approaches to develop algorithms.
+<br/>
+There are three commonly used approaches to develop algorithms
 
-      <p>Who knows that there might be a great artist suppressed within you
-        because of those wrong decisions you took back then, and its never too
-        late to find that out. I am a staunch believer of the concept that  Art
-         shapes the future  as it inspires science &amp; theory to look around
-         for a different perspective, differentiates you from a machine or
-         artificial conscience, sometimes keeps you loaded with motivation
-         to function beyond your expectations, might even help you find your
-         passsion in life. Oh I moved so much away from the topic, here
-         check out the article below.</p>
-      <p>Moreover sketching, drawing and stuffs like that are more pragmatic
-        than we think, we need a lot of creative &amp; design workforce to help
-        fuel this digital art revolution going on like in designing VR world,
-        interactive books novels magazines, games and so much more in various
-        entertainment sectors. There are so many tools available that you wont
-        need to know any technical details, just start your pure designing</p>
-        <span class="ending">Author:
-          <a href="http://www.neetishraj.ga/" target="_blank">Neetish Raj</a></span>
-    </article>
+Greedy Approach− finding solution by choosing next best option
 
-    <footer>Copyright &copy; <a href="http://www.neetishraj.ga/" target="_blank">Neetish Raj</a></footer>
-  </div>
+Divide and Conquer− diving the problem to a minimum possible sub-problem and solving them independently
 
-</body>
+Dynamic Programming−diving the problem to a minimum possible sub-problem and solving them combinedly
+</p>
+<p>
+8)Give some examples greedy algorithms.
+<br/>
+    The below given problems find their solution using greedy algorithm approach
+
+ Travelling Salesman Problem Prim's Minimal Spanning Tree Algorithm Kruskal's Minimal Spanning Tree Algorithm Dijkstra's Minimal Spanning Tree Algorithm Graph - Map Coloring Graph - Vertex Cover Knapsack Problem Job Scheduling Problem
+</p>
+<p>
+9)What are some examples of divide and conquer algorithms?
+<br/>
+     The below given problems find their solution using divide and conquer algorithm approach
+
+Merge SortQuick SortBinary Search        Strassen's Matrix MultiplicationClosest pair (points)
+</p>
+<p>
+10)What are some examples of dynamic programming algorithms?
+<br/>
+     The below given problems find their solution using divide and conquer algorithm approach
+
+       Fibonacci number series       Knapsack problem       Tower of Hanoi       All pair shortest path by Floyd-Warshall       Shortest path by Dijkstra       Project scheduling
+</p>
+<p>
+11)What is a linked-list?<br/>
+
+        A linked-list is a list of data-items connected with links i.e. pointers or references. Most modern high-level programming
+language does not provide the feature of directly accessing memory location, therefore, linked-list are not supported in them or
+available in form of inbuilt functions.
+</p>
+<p>
+12)What is stack?<br/>
+
+        In data-structure, stack is an Abstract Data Type (ADT) used to store and retrieve values in Last In First Out method.
+</p>
+<p>
+13)Why do we use stacks?<br/>
+
+       Stacks follows LIFO method and addition and retrieval of a data item takes only Ο(n) time. Stacks are used where we need to
+access data in the reverse order or their arrival. Stacks are used commonly in recursive function calls, expression parsing, depth
+first traversal of graphs etc.
+</p>
+<p>
+14)What operations can be performed on stacks?
+<br/>
+       The below operations can be performed on a stack −
+
+     push()     : adds an item to stack
+
+     pop()       :  removes the top stack item
+
+     peek()     : gives value of top item without removing it
+
+     isempty(): checks if stack is empty
+
+     isfull()    :  checks if stack is full
+</p>
+<p>
+15)What is a queue in data-structure?<br/>
+
+            Queue is an abstract data structure, somewhat similar to stack. In contrast to stack, queue is opened at both end.
+One end is always used to insert data (enqueue) and the other is used to remove data (dequeue). Queue follows First-In-First-Out
+methodology, i.e., the data item stored first will be accessed first.
+</p>
+<p>
+16)Why do we use queues?<br/>
+
+       As queues follows FIFO method, they are used when we need to work on data-items in exact sequence of their arrival.
+Every operating system maintains queues of various processes. Priority queues and breadth first traversal of graphs are some examples
+of queues.
+</p>
+<p>
+17)What operations can be performed on Queues?
+<br/>
+  The below operations can be performed on a stack −
+
+     enqueue()  : adds an item to rear of the queue
+
+     dequeue()  : removes the item from front of the queue
+
+     peek()        : gives value of front item without removing it
+
+     isempty()  :  checks if stack is empty
+
+     isfull()      : checks if stack is full
+</p>
+<p>
+18)What is linear searching?<br/>
+
+        Linear search tries to find an item in a sequentially arranged data type. These sequentially arranged data items known as
+array or list, are accessible in incrementing memory location. Linear search compares expected data item with each of data items in
+list or array. The average case time complexity of linear search is Ο(n) and worst case complexity is Ο(n2). Data in target
+arrays/lists need not to be sorted.
+    </p>
+<p>
+19)What is binary search?
+<br/>
+         A binary search works only on sorted lists or arrays. This search selects the middle which splits the entire list into two
+parts. First the middle is compared. This search first compares the target value to the mid of the list. If it is not found,
+then it takes decision on whether.
+</p>
+<p>
+20)What is bubble sort and how bubble sort works?
+<br/>
+            Bubble sort is comparison based algorithm in which each pair of adjacent elements is compared and elements are swapped
+if they are not in order. Because the time complexity is Ο(n2), it is not suitable for large set of data.
+</p>
+<p>
+21)Tell me something about 'insertion sort'?
+<br/>
+           Insertion sort divides the list into two sub-list, sorted and unsorted. It takes one element at time and finds it
+appropriate location in sorted sub-list and insert there. The output after insertion is a sorted sub-list. It iteratively works on
+all the elements of unsorted sub-list and inserts them to sorted sub-list in order.
+</p>
+<p>
+22)How quick sort works?<br/>
+
+           Quick sort uses divide and conquer approach. It divides the list in smaller 'partitions' using 'pivot'.
+The values which are smaller than the pivot are arranged in the left partition and greater values are arranged in the right partition.
+Each partition is recursively sorted using quick sort.
+</p>
+<p>
+23)What is a graph?<br/>
+
+             A graph is a pictorial representation of a set of objects where some pairs of objects are connected by links.
+The interconnected objects are represented by points termed as vertices, and the links that connect the vertices are called edges.
+</p>
+<p>
+24)How depth first traversal works?<br/>
+
+          Depth First Search algorithm(DFS) traverses a graph in a depthward motion and uses a stack to remember to get the next
+vertex to start a search when a dead end occurs in any iteration.
+</p>
+<p>
+25)How breadth first traversal works?<br/>
+
+            Breadth First Search algorithm(BFS) traverses a graph in a breadthwards motion and uses a queue to remember to get
+the next vertex to start a search when a dead end occurs in any iteration.
+</p>
+<p>
+26)What is a tree?<br/>
+
+      A tree is a minimally connected graph having no loops and circuits.
+</p>
+<p>
+27)What is a binary tree?<br/>
+
+       A binary tree has a special condition that each node can have two children at maximum.
+</p>
+<p>
+28)What is a binary search tree?<br/>
+
+      A binary search tree is a binary tree with a special provision where a node's left child must have value less than its
+parent's value and node's right child must have value greater than it's parent value.
+</p>
+<p>
+29)What is tree traversal?<br/>
+
+       Tree traversal is a process to visit all the nodes of a tree. Because, all nodes are connected via edges (links) we
+always start from the root (head) node. There are three ways which we use to traverse a tree
+
+In-order TraversalPre-order TraversalPost-order Traversal
+</p>
+<p>
+30)What is an AVL Tree?<br/>
+
+          AVL trees are height balancing binary search tree. AVL tree checks the height of left and right sub-trees and assures
+that the difference is not more than 1. This difference is called Balance Factor.
+           BalanceFactor=height(left-sutree) − height(right-sutree)
+</p>
+<p>
+31)What is a spanning tree?
+<br/>
+       A spanning tree is a subset of Graph G, which has all the vertices covered with minimum possible number of edges.
+A spanning tree does not have cycles and it can not be disconnected.
+</p>
+<p>
+32)How many spanning trees can a graph has?
+<br/>
+       It depends on how connected the graph is. A complete undirected graph can have maximum nn-1 number of spanning trees,
+where n is number of nodes.
+</p>
+<p>
+33)How Kruskal's algorithm works?<br/>
+
+      This algorithm treats the graph as a forest and every node it as an individual tree. A tree connects to another only and
+only if it has least cost among all available options and does not violate MST properties.
+</p>
+<p>
+34)How Prim's algorithm finds spanning tree?
+<br/>
+           Prim's algorithm treats the nodes as a single tree and keeps on adding new nodes to the spanning tree from the given
+graph.
+</p>
+<p>
+35)What is a minimum spanning tree (MST) ?
+<br/>
+           In a weighted graph, a minimum spanning tree is a spanning tree that has minimum weight that all other spanning trees
+of the same graph.
+</p>
+<p>
+36)What is a heap in data structure?
+<br/>
+          Heap is a special balanced binary tree data structure where root-node key is compared with its children and arranged
+accordingly. A min-heap, a parent node has key value less than its childs and a max-heap parent node has value greater than its
+childs.
+</p>
+<p>
+37)What is a recursive function?
+<br/>
+        A recursive function is one which calls itself, directly or calls a function that in turn calls it. Every recursive
+function follows the recursive properties − base criteria where functions stops calling itself and progressive approach where the
+functions tries to meet the base criteria in each iteration.
+</p>
+<p>
+38)What is algorithm?
+<br/>
+          Algorithm is a step by step procedure, which defines a set of instructions to be executed in certain order to get the desired output.
+</p>
+<p>
+39)Why we need to do algorithm analysis?
+<br/>
+         A problem can be solved in more than one ways. So, many solution algorithms can be derived for a given problem.
+We analyze available algorithms to find and implement the best suitable algorithm.
+</p>
+<p>
+40)What are the criteria of algorithm analysis?
+<br/>
+                 An algorithm are generally analyzed on two factors − time and space. That is, how much execution time and how much
+extra space required by the algorithm.
+</p>
+<p>
+41)What is asymptotic analysis of an algorithm?
+<br/>
+        Asymptotic analysis of an algorithm, refers to defining the mathematical boundation/framing of its run-time
+performance. Using asymptotic analysis, we can very well conclude the best case, average case and worst case scenario of an algorithm.
+</p>
+<p>
+42)What are asymptotic notations?
+<br/>
+         Asymptotic analysis can provide three levels of mathematical binding of execution time of an algorithm −
+
+Best case is represented by Ο(n) notation.Worst case is represented by Ω(n) notation.Average case is represented by Θ(n) notation.
+</p>
+<p>
+43)What is linear data strucutre?
+<br/>
+       A linear data-strucutre has sequentially arranged data items. The next time can be located in the next memory
+address. It is stored and accessed in a sequential manner. Array and list are example of linear data structure.
+</p>
+<p>
+44)What are common operations that can be performed on a data-structure?
+<br/>
+ The following operations are commonly performed on any data-structure
+
+Insertion:adding a data item
+
+Deletion : removing a data item
+
+Traversal:accessing and/or printing all data items
+
+Searching:  finding a particular data item
+
+Sorting  :arranging data items in a pre-defined sequence
+</p>
+<p>
+45) What pointer type is used to implement the heterogeneous linked list in C?
+<br/>
+        Void pointer. The heterogeneous linked list contains different data types in it's nodes and we need a link, pointer,
+to connect them. Since we can't use ordinary pointers for this, we use the void pointer. Void pointer is a generic pointer type,
+and capable of storing pointer to any type.
+
+</p>
+<p>
+46) What is the minimum number of queues needed to implement the priority queue?
+<br/>
+Two. One queue is used for the actual storing of data, and the other one is used for storing the
+priorities.
+</p>
+<p>
+47)Which data structure is used to perform recursion?
+<br/>
+    The answer is Stack. Stack has the LIFO (Last In First Out) property; it remembers it's ‘caller’. Therefore,
+it knows to whom it should return when the function has to return. On the other hand, recursion makes use of the system stack
+for storing the return addresses of the function calls. Every recursive function has its equivalent iterative (non-recursive)
+function. Even when such equivalent iterative procedures are written explicit, stack is to be used.
+</p>
+<p>
+48) What are some of the applications for the tree data structure?
+<br/>
+Manipulation of the arithmetic expressions.Symbol table construction.Syntax analysis.
+</p>
+<p>
+49)Which data strucutres algorithm used in solving the eight Queens problem?
+<br/>
+         Backtracking
+
+ 50) In an AVL tree, at what condition the balancing is to be done?
+<br/>
+        If the "pivotal value", or the "height factor", is greater than one or less than minus one.
+</p>
+<p>
+51) What is the bucket size, when the overlapping and collision occur at the same time?
+<br/>
+         The answer is one. If there is only one entry possible in the bucket, when the collision occurs, there is no way to
+accommodate the colliding value. This results in the overlapping of values.
+</p>
+<p>
+ 52) There are 8, 15, 13, and 14 nodes in 4 different trees. Which one of them can form a full binary tree?
+<br/>
+        The answer is the tree with 15 nodes. In general, there are 2^n-1 nodes in a full binary tree.
+By the method of elimination: Full binary trees contain odd number of nodes, so there cannot be full binary trees with 8 or 14 nodes.
+Moreover, with 13 nodes you can form a complete binary tree but not a full binary tree. Thus, the correct answer is 15.
+</p>
+
+<p>
+53)Whether Linked List is linear or Non-linear data structure?<br/>
+            According to Storage Linked List is a Non-linear one.
+</p>
+
+<p>
+54) Is it necessary to sort a file before searching a particular item ?
+<br/>
+       If less work is involved in searching a element than to sort and then extract, then we don’t go for sort
+If frequent use of the file is required for the purpose of retrieving specific element, it is more efficient to sort the file.
+Thus it depends on situation.
+</p>
+<p>
+55) What are the issues that hamper the efficiency in sorting a file?
+<br/>
+           The issues are :
+            i) Length of time required by the programmer in coding a particular sorting program
+           ii) Amount of machine time necessary for running the particular program
+           iii)The amount of space necessary for the particular program .
+</p>
+<p>
+56) Calculate the efficiency of sequential search?<br/>
+
+         The number of comparisons depends on where the record with the argument key appears in the table
+              If it appears at first position then one comparison
+                If it appears at last position then n comparisons
+                   Average=(n+1)/2 comparisons
+              Unsuccessful search n comparisons
+                  Number of comparisons in any case is O (n).
+</p>
+
+<p>
+57) Is any implicit arguments are passed to a function when it is called?
+<br/>
+             Yes there is a set of implicit arguments that contain information necessary for the function to execute and return
+correctly. One of them is return address which is stored within the function’s data area, at the time of returning to calling program
+he address is retrieved and the function branches to that location.
+</p>
+
+<p>
+58) Parenthesis is never required in Postfix or Prefix expressions, why?
+<br/>
+            Parenthesis is not required because the order of the operators in the postfix /prefix expressions determines the actual
+order of operations in evaluating the expression
+
+</p>
+
+<p>
+59)What is tower of hanoi?
+<br/>
+         Tower of Hanoi, is a mathematical puzzle which consists of three tower (pegs) and more than one rings. All rings are
+of different size and stacked upon each other where the large disk is always below the small disk. The aim is to move the tower of
+disk from one peg to another, without breaking its properties.
+</p>
+
+<p>
+60)What is fibonacci series?
+<br/>
+           Fibonacci Series generates subsequent number by adding two previous numbers. For example − 0 1 1 2 3 5 8 13.
+</p>
+
+<p>
+61)What is hashing?
+<br/>
+        Hashing is a technique to convert a range of key values into a range of indexes of an array. By using hash tables,
+we can create an associative data storage where data index can be find by providing its key values.
+</p>
+
+<p>
+62)What is interpolation search technique?
+<br/>
+          Interpolation search is an improved variant of binary search. This search algorithm works on the probing
+position of required value.
+
+</p>
+
+<p>
+63)What is the prefix and post fix notation of (a + b) * (c + d) ?
+<br/>
+     Prefix Notation − * + a b + c d
+
+     Postfix Notation − a b + c d + *
+        </p>
+    </body>
 </html>

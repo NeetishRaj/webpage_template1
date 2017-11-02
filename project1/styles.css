@@ -1,29 +1,67 @@
-div.container{
-  width: 100%;
-  border: 2px solid #6a6a6a;
+
+/*styles by MORPHEUS
+Note that my goal here is to test features of CSS to make the reading process look more interactive but without touching html file so no divs , classes , ids and no JS to maintain responsiveness*/
+
+@keyframes shake1{
+    0%{transform:rotate(3deg);}
+    100%{transform:rotate(-3deg);}
 }
-header{
-  background-color: #121212;
-  width: 100%;
-  
+@keyframes shake2{
+    0%{transform:rotate(-3deg);}
+    100%{transform:rotate(3deg);}
 }
-nav{
-  width:100%;
-  max-height: 25px;
-  display:block;
-  background-color: linen;
+body {
+    color:white;
+    font-size:18px;
+    text-align:justify;
+    background-color:#456789;
+    font-family:courier;
+    letter-spacing:-1px;
+
 }
-nav ul{
-  display:block;
-  background-color: linen;
+p{
+    width:95%;
+    padding:3px;
+    font-size:0.5em;
+    background-color:#566699;
+    box-shadow:-2px -2px 10px cyan,
+                -3px -3px 10px cyan;
+    transition:1s;
+    transition:font-size 0.01s;
+    transition:content 0.01s;
+
 }
-nav ul li{
-  display: inline;
-  padding: 2px 5px;
-  float: left;
+p::first-line{
+    font-size:1em;
 }
-aside{
-  display: block;
-  float:left;
-  max-width: 250px;
+p:nth-child(even){
+    border-left:8px ridge #34347a;
+    border-top:8px ridge  #34347a;
+}
+p:nth-child(odd){
+    border-left:8px ridge #333;
+    border-top:8px ridge  #333;
+}
+p::first-letter{
+    font-size:1.4em;
+    color:yellow;
+}
+p:nth-child(odd):hover{
+    background-color:#46228a;
+    box-shadow:0px 0px 0px black, 0px 0px 0px black;
+    animation:shake1 0.12s 1 ease;
+    font-size:1em;
+}
+p:nth-child(even):hover{
+    background-color:#46228a;
+    box-shadow:0px 0px 0px black, 0px 0px 0px black;
+    animation:shake2 0.12s 1 ease;
+    font-size:1em;
+}
+p:nth-child(3):hover::before{
+    content:url("http://www.freeiconspng.com/uploads/horror-png-27.png");
+    /*content:url("http://soundbible.com/66-Screaming-Female.html");*/
+    position:fixed;
+    margin-left:-150px;
+    margin-top:-50px;
 }
